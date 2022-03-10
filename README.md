@@ -3,7 +3,7 @@ Multi Device Server Centralized Data Swap Protocol
 
 # Project in process
 
-#cAlgorithm:
+# Algorithm:
 All devices are connected to the main frame and have their own connection code that is stored only on the main frame and on the devices.
 Device and main frame never send connection code to each other!
 To connect main frame to device first time the server need to create new connection code and send it to device.
