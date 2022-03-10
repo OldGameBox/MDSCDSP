@@ -47,7 +47,7 @@ SID - Swapping Information Decoder - decodes Swapping Information.
 SIA - Swapping Information Analyzer - analyzes Swapping Information to make computer understand what another device talking about.
 
 # Scheme of Swapping Algorithm:
-Device #1 >> SIG >> SIE >> {sending} >> SID >> SIA >> PSDS >> Device #2
+    Device #1 >> SIG >> SIE >> {sending} >> SID >> SIA >> PSDS >> Device #2
 
 SIG - Swapping Information Generator
 PSDS - Post Swapping Data Saver
