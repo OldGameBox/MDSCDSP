@@ -3,24 +3,24 @@ Multi Device Server Centralized Data Swap Protocol
 
 # Project in process
 
-#Algorithm:
+#cAlgorithm:
 All devices are connected to the main frame and have their own connection code that is stored only on the main frame and on the devices.
 Device and main frame never send connection code to each other!
 To connect main frame to device first time the server need to create new connection code and send it to device.
 After first connection the device and the main frame are ready to swap data between each other.
 
-#Swapping scheme:
+# Swapping scheme:
 To send info from device to main frame and vise versa each of device needs to understand sended info.
 For this reason there is a Swapping Information Codec - SIC.
 
-#MDSCDSP supports only three types of devices:
+# MDSCDSP supports only three types of devices:
 1) Server (Main Frame) - high priority devices that can get almost any inforamtion about connected device.
 2) Device - low priority device that is able to get limited informtion from server and can't work with other devices except main frame.
 3) Controller - mid priority device used to control main abilities of connected to the server devices.
 
 All recieved inforamtion doesn't contain any senders, so no one can create a history of swapped inforamtion without all devices.
 
-#Decoded inforamtion scheme:
+# Decoded inforamtion scheme:
     {OPERATION : DATA : VALUE|}
 
 OPERATION - describes what kind of operation one device want to do with other one.
@@ -46,7 +46,7 @@ SIE - Swapping Information Encoder - encodes Swapping Information.
 SID - Swapping Information Decoder - decodes Swapping Information.
 SIA - Swapping Information Analyzer - analyzes Swapping Information to make computer understand what another device talking about.
 
-#Scheme of Swapping Algorithm:
+# Scheme of Swapping Algorithm:
 Device #1 >> SIG >> SIE >> {sending} >> SID >> SIA >> PSDS >> Device #2
 
 SIG - Swapping Information Generator
